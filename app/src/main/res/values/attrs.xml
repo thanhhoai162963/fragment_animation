@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HigherToolbar">
+        <attr name="toolbar_title" format="string|integer"/>
+        <attr name="toolbar_color_title" format="color"/>
+        <attr name="toolbar_image_right" format="reference"/>
+        <attr name="toolbar_image_left" format="reference"/>
+        <attr name="toolbar_background" format="color"/>
+    </declare-styleable>
+</resources>

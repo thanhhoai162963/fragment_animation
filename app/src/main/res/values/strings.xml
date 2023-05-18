@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Higher</string>
+    <string name="error_render">Error render</string>
+</resources>
