@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:background="@android:color/transparent">
 
-    <ImageButton
+    <ImageView
         android:id="@+id/img_button_left"
         android:layout_width="50dp"
         android:layout_height="50dp"

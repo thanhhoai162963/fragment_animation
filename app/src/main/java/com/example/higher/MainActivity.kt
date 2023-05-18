@@ -1,7 +1,10 @@
 package com.example.higher
 
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.palette.graphics.Palette
 import com.example.higher.databinding.ActivityMainBinding
 
 
@@ -10,9 +13,30 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        val view = binding.root
+        setContentView(view)
+        createPaletteSync(BitmapFactory.decodeResource(resources, R.mipmap.ic_launcher))
     }
 
+    fun createPaletteSync(bitmap: Bitmap): Palette = Palette.from(bitmap).generate()
+
+    private fun createPalette2() {
+        val options = BitmapFactory.Options()
+        options.inPreferredConfig = Bitmap.Config.ARGB_8888
+        val bitmap = BitmapFactory.decodeResource(resources, R.mipmap.ic_launcher_foreground)
+
+        Palette.from(
+            bitmap
+        ).generate {
+                if (it != null) {
+                    it.lightVibrantSwatch?.rgb?.let { it1 -> binding.edt1.setBackgroundColor(it1) }
+                }
+
+            }
+    }
+
+    private fun setColor() {
+    }
 
     /*private fun setSystemBar() {
         WindowCompat.setDecorFitsSystemWindows(window,false)

@@ -12,6 +12,8 @@
 
     <TextView
         android:id="@+id/edt_1"
+        style="@style/HigherText"
+        android:text="123213213"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true" />

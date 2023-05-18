@@ -1,3 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <style name="HigherText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/yellow</item>
+    </style>
+    <style name="HigherText.Higet1">
+
+    </style>
+
+
 </resources>
