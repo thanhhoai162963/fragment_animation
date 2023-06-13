@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/layout_1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/yellow"
     android:orientation="vertical">
-
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_material"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_material_back"
+    <ImageView
+        android:id="@+id/img_view_1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:transitionName="demo_123"
+        android:scaleType="centerCrop" />
 
 </LinearLayout>
-
-
-
-

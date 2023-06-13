@@ -7,4 +7,7 @@
         <attr name="toolbar_image_left" format="reference"/>
         <attr name="toolbar_background" format="color"/>
     </declare-styleable>
+
+    <declare-styleable name="CustomDrawableView2">
+    </declare-styleable>
 </resources>
